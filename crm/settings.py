@@ -400,7 +400,8 @@ else:
     try:
         from .local_settings import *
     except ImportError:
-        raise ImproperlyConfigured("No local settings file found")
+        pass
+        #raise ImproperlyConfigured("No local settings file found")
 
 CACHES = {
     "default": {
